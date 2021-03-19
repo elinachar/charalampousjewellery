@@ -38,6 +38,22 @@ gem 'jbuilder', '~> 2.5'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
 
+# Gem for lazy loading
+gem "lazyload-rails"
+
+# Gem for locale data in different languages
+gem 'rails-i18n'
+
+# Gem for translating routes
+gem 'route_translator'
+
+# Gem for translating slugs in the models
+gem 'friendly_id', '~> 5.4.0'
+gem 'friendly_id-globalize'
+
+# Gem for locazling dynamic contect (models)
+gem 'globalize', '~> 5.3.0'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]

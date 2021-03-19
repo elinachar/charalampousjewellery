@@ -1,0 +1,13 @@
+el:
+  routes:
+    about: poioi-eimaste
+    contact: epikoinwniste-mazi-mas
+    sign_in: "syndesi"
+    sign_up: "eggrafi"
+    terms_and_conditions: "oroi-kai-proypotheseis"
+    privacy_policy: "politiki-aporritoy"
+    password: kwdikos
+    new: neos
+    edit: epeksergasia
+    users: xristes
+    favorites: agapimena

@@ -1,0 +1,13 @@
+en:
+  routes:
+    about: about
+    contact: contact
+    sing_in: "sign-in"
+    sign_up: "sign-up"
+    terms_and_conditions: "terms-and-conditions"
+    privacy_policy: "privacy-policy"
+    password: password
+    new: new
+    edit: edit
+    users: users
+    favorites: favorites

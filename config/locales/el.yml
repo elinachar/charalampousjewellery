@@ -1,0 +1,36 @@
+el:
+  locale: "el"
+  title: "Χαραλάμπους - Exclusive Jewellery"
+  head:
+    description: "Κοσμηματοπωλείο Χαραλάμπους"
+    keywords: "Χαραλάμπους, κοσμηματοπωλείο, κόσμημα, ρολόγια, βέρες, μονόπετρα, σταυροί βάπτισης, δώρα, αντρικό κόσμημα, καλαμάτα, e-shop"
+    twitter_card:
+      description: ""
+    facebook_meta_data:
+      description: ""
+      locale: "el"
+      person: "Χαραλάμπους Exclusive Jewellery"
+    google_structured_data:
+      description: ""
+      inlanguage: "el"
+      person: "Χαραλάμπους Exclusive Jewellery"
+      collection_page:
+        name: "Εποχιακά κομμάτια, κοσμήματα γάμου, κοσμήματα βάφτισης, κόσμημα υψηλής αισθητικής, ρολόγια, αντρικό κόσμημα, αξεσουάρ και δώρα"
+        description: "Εποχιακά κομμάτια, κοσμήματα γάμου, κοσμήματα βάφτισης, κόσμημα υψηλής αισθητικής, ρολόγια, αντρικό κόσμημα, αξεσουάρ και δώρα"
+  navigation_bar:
+    the_company: "Η Εταιρία"
+    search: "Αναζήτηση"
+    login_sign_up: "Σύνδεση"
+    my_account: "Ο Λογαριασμός μου"
+    favorite: "Αγαπημένα"
+    manage_users: "Διαχείρηση Χρηστών"
+    logout: "Αποσύνδεση"
+  footer:
+    designed_and_developed: "Σχεδιασμός και κατασκευή ιστοσελίδας από "
+  date:
+    formats:
+      recipe: "%d-%m-%Y"
+  accept_cookies:
+    accept_cookies_info: "Για την καλύτερή σας εμπειρία χρησιμοποιούμε cookies. Με το να συνεχίσετε να χρησιμποιείτε την ιστοσελίδα μας, συνενείται στην χρήση των cookies."
+    learn_more: "Μάθετε Περισσότερα"
+    accept_all_cookies: "Αποδοχή Όλων των Cookies"
