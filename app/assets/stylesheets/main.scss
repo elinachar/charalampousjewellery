@@ -1,4 +1,10 @@
 @import 'colors';
+@import 'breakpoints';
+
+body {
+  background: $lightGold!important;
+  padding: 0px 20px 20px 20px;
+}
 
 a:-webkit-any-link {
   text-decoration: none!important;
@@ -6,4 +12,15 @@ a:-webkit-any-link {
 
 .color-grey {
   color: $grey;
+}
+
+.anchor {
+  margin-top: 100px;
+}
+
+@media only screen and (max-width: $xs_max_width) {
+  body {
+    background: white!important;
+    padding: 0;
+  }
 }
