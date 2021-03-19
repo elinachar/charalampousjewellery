@@ -18,6 +18,34 @@
   </head>
 
   <body>
-    <%= yield %>
+
+    <!-- Start Navigation Bar -->
+    <%= render "layouts/navigation_bar" %>
+    <!-- End Navigation Bar -->
+
+    <!-- Start Main Body -->
+    <div class="anchor">
+
+      <!-- Start Flash Messages -->
+      <div class="container">
+        <% if notice %>
+          <p id="notice" class="alert alert-info text-center", role="alert"><%= notice %></p>
+        <% end %>
+        <% if alert %>
+          <p id="alert" class="alert alert-danger text-center", role="alert"><%= alert %></p>
+        <% end %>
+      </div>
+      <!-- End Flash Messages -->
+
+      <!-- Start Display Main Body -->
+      <div class="main-body">
+        <%= yield %>
+      </div>
+      <!-- End Display Main Body -->
+
+    </div>
+    <!-- End Main Body -->
+
+
   </body>
 </html>
