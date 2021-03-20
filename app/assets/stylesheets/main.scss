@@ -6,12 +6,47 @@ body {
   padding: 0px 20px 20px 20px;
 }
 
+html:lang(el),
+body:lang(el),
+.font-gr {
+  font-family: 'Piazzolla', serif!important;
+}
+
+html:lang(en),
+body:lang(en) {
+  // font-family: 'Cinzel', serif;
+  // font-family: 'Cormorant Garamond', serif;
+  // font-family: 'Nanum Myeongjo', serif;
+  // font-family: 'Noto Serif JP', serif;
+  // font-family: 'Piazzolla', serif;
+  // font-family: 'Shippori Mincho', serif;
+  font-family: 'El Messiri', sans-serif;
+}
+
 a:-webkit-any-link {
   text-decoration: none!important;
 }
 
+button {
+  border: none;
+  background: none;
+}
+
 .color-grey {
-  color: $grey;
+  color: $grey!important;
+}
+
+.color-black {
+  color: black!important;
+}
+
+.hover-black:hover {
+  color: black!important;
+}
+
+.container-fluid {
+  padding-right: 0!important;
+  padding-left: 0!important;
 }
 
 .anchor {

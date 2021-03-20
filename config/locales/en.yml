@@ -18,13 +18,21 @@ en:
         name: "Seasonal products, wedding and engagment rings, christening crosses, high jewellery, men's jewellery, accessories and gifts"
         description: "Seasonal products, wedding and engagment rings, christening crosses, high jewellery, men's jewellery, accessories and gifts"
   navigation_bar:
-    the_company: "The Company"
+    the_company: "THE COMPANY"
     search: "Search"
-    login_sign_up: "Sign in"
+    # login_sign_up: "Sign in"
+    login_sign_up: SIGN IN
     my_account: "My Account"
     favorite: "Favorite"
     manage_users: "Manage Users"
     logout: "Sign out"
+    wedding: WEDDING
+    christening: CHRISTENING
+    jewellery: JEWELLERY
+    watches: WATCHES
+    high_jewellery: HIGH JEWELLERY
+    accessories: ACCESSORIES
+    gifts: GIFTS
   footer:
     designed_and_developed: "Designed and Developed by "
   date:

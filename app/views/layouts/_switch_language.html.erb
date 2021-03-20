@@ -1,7 +1,4 @@
-<div class="switch-language text-center">
-
-  <%#= link_to request.params.merge( locale: 'en' ), rel: 'alternate', hreflang: "en"  do %>
-
+<span class="switch-language text-center">
   <% if content_for?(:switch_path_en) %>
     <% current_url_path_en = yield(:switch_path_en) %>
   <% else %>
@@ -9,9 +6,9 @@
   <% end %>
   <%= link_to current_url_path_en, rel: 'alternate', hreflang: "en"  do %>
     <% if I18n.locale.to_s == 'en' %>
-      <div class="link-to-language active" id="link-to-en">en</div>
+      <div class="link-to-language active color-black" id="link-to-en">en</div>
     <% else %>
-      <div class="link-to-language diactivated"  data-locale="en" id="link-to-en">en</div>
+      <div class="link-to-language diactivated color-grey hover-black"  data-locale="en" id="link-to-en">en</div>
     <% end %>
   <% end %>
  <span class="color-grey">| </span>
@@ -22,9 +19,9 @@
   <% end %>
   <%= link_to current_url_path_el, rel: 'alternate', hreflang: "en"  do %>
     <% if I18n.locale.to_s == 'el' %>
-      <div class="link-to-language active" id="link-to-el">ελ</div>
+      <div class="link-to-language active color-black font-gr" id="link-to-el">ελ</div>
     <% else %>
-      <div class="link-to-language diactivated" id="link-to-el" data-locale="el">ελ</div>
+      <div class="link-to-language diactivated color-grey hover-black font-gr" id="link-to-el" data-locale="el">ελ</div>
     <% end %>
   <% end %>
-</div>
+</span>

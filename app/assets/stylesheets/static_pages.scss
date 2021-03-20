@@ -1,3 +1,35 @@
-// Place all the styles related to the static_pages controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+@import 'colors';
+
+// INDEX
+.index {
+  height: 1000px;
+  background: white;
+
+  .index-card {
+    margin: auto;
+    width: 90%;
+    height: 450px;
+    background-image: url(/assets/diamond_rings.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    .index-text {
+      h2 {
+        margin-bottom: 30px;
+      }
+      .index-button {
+        width: 50%;
+        margin: auto;
+        cursor: pointer;
+        padding: 20px;
+        border: 1px solid grey;
+        border-color: $lightGold;
+      }
+
+      .index-button:hover {
+        background: white;
+      }
+    }
+  }
+}

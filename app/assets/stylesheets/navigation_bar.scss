@@ -1,52 +1,153 @@
 @import 'breakpoints';
 @import 'colors';
 
-/* Switch Language */
-.switch-language {
-  // width: 50px;
-  position: absolute;
-  top: 10px;
-  right: 20px;
-  z-index: 100;
-
-  a {
-    display: inline-block;
-
-    .link-to-language {
-      color: grey;
-      font-weight: 500;
-      font-size: 15px;
-    }
-
-    .link-to-language.active {
-      color: black;
-    }
-
-    .link-to-language:hover {
-      color: black;
-    }
-  }
-}
 
 /* Navigation Bar */
 #nav-bar {
   position: fixed;
-  top: 20px;
+  top: 0;
   width: calc(100vw - 40px);
-  height: 50px;
+  padding: 0;
+  height: 220px;
   background-color: white;
+  border-bottom: 1px solid #f9f7f1;
+  z-index: 100;
 
-  #xs-top-line {
+  #top-line {
     background: $lightGold;
-    height: 10px;
+    height: 20px;
+  }
+
+  .nav-fist-line {
+    margin: 0;
+    background: red;
+    position:relative;
+
+    .nav-first-line-item {
+      padding: 15px 20px;
+      position: absolute;
+    }
+    .nav-search {
+      // top: -3px;
+      right: 316px;
+    }
+
+    .nav-sign-in {
+      right: 196px;
+    }
+
+    .nav-favorite {
+      right: 138px;
+      i {
+        font-size: 18px;
+      }
+    }
+
+    .nav-shopping-bag {
+      top: 15px; //equal to top-padding of other .nav-first-line-items
+      right: 80px;
+      background: url(/assets/shopping_bag_4c4c4c_18x18.png) no-repeat;
+    }
+
+    .nav-shopping-bag:hover {
+      background: url(/assets/shopping_bag_black_18x18.png) no-repeat;
+    }
+
+    .nav-language-switcher {
+      right: 0px;
+      /* Switch Language */
+      .switch-language {
+        a {
+          display: inline-block;
+
+          .link-to-language {
+            font-weight: 500;
+            font-size: 15px;
+          }
+
+        }
+      }
+    }
+  }
+
+  .nav-middle-line {
+    #navbar-logo {
+      height: 100px;
+      margin: auto;
+      margin-top: 30px;
+    }
+    .gold-text {
+      font-size: 25px;
+      color:#c3a343;
+      -webkit-text-fill-color: transparent;
+      background: -webkit-linear-gradient(transparent, transparent),
+      url(/assets/gold_texture.jpeg) repeat;
+      background: -o-linear-gradient(transparent, transparent);
+      -webkit-background-clip: text;
+    }
+  }
+
+  .nav-last-line {
+    ul {
+      padding: 0;
+      li {
+        display: inline-block;
+        padding: 20px 15px;
+        font-size: 14px;
+      }
+    }
   }
 }
+
+
 
 /* XS Screens */
 @media only screen and (max-width: $xs_max_width) {
   #nav-bar {
-    top: 0;
     width: 100%;
-    padding: 0;
+
+    #top-line {
+      height: 10px;
+    }
+  }
+}
+
+/* XS and SM and MD Screens */
+@media only screen and (max-width: $md_max_width) {
+  #nav-bar {
+    background: blue;
+  }
+}
+
+
+
+/* LG Screens */
+
+/* Inbetween LG and XL Screens */
+@media only screen and (min-width:1050px) {
+  #nav-bar {
+    background: red;
+    .nav-last-line {
+      ul {
+        li {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
+
+/* XL Screens */
+@media only screen and (min-width: $xl_min_width) {
+  #nav-bar {
+    background: green;
+    .nav-last-line {
+      ul {
+        li {
+          padding: 20px;
+          font-size: 16px;
+        }
+      }
+    }
   }
 }
