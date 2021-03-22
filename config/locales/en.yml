@@ -21,7 +21,7 @@ en:
     the_company: "THE COMPANY"
     search: "Search"
     # login_sign_up: "Sign in"
-    login_sign_up: SIGN IN
+    login_sign_up: Sign in
     my_account: "My Account"
     favorite: "Favorite"
     manage_users: "Manage Users"
@@ -33,6 +33,16 @@ en:
     high_jewellery: HIGH JEWELLERY
     accessories: ACCESSORIES
     gifts: GIFTS
+    for_woman: "For Ladies"
+    for_man: "Form Men"
+    for_children: "For Children"
+    rings: "Rings"
+    earrings: "Earrings"
+    bracelets: "Bracelets"
+    necklaces: "Necklaces"
+    bangles: "Bangles"
+    cufflinks: "Cufflinks"
+    kids_bracelets: "Bracelets"
   footer:
     designed_and_developed: "Designed and Developed by "
   date:

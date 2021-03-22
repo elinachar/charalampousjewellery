@@ -21,7 +21,7 @@ el:
     the_company: "Η ΕΤΑΙΡΙΑ"
     search: "Αναζήτηση"
     # login_sign_up: "Σύνδεση"
-    login_sign_up: "ΣΥΝΔΕΣΗ"
+    login_sign_up: "Σύνδεση"
     my_account: "Ο Λογαριασμός μου"
     favorite: "Αγαπημένα"
     manage_users: "Διαχείρηση Χρηστών"
@@ -31,8 +31,21 @@ el:
     jewellery: ΚΟΣΜΗΜΑΤΑ
     watches: ΡΟΛΟΓΙΑ
     high_jewellery: ΥΨΗΛΗ ΚΟΣΜΗΜΑΤΟΠΟΙΙΑ
-    accessories: ΑΞΕΣΟΥΑΡ
+    accessories: ΑΣΗΜΙΚΑ
     gifts: ΔΩΡΑ
+    for_woman: "Για τη Γυναίκα"
+    for_man: "Για τον  ΄Ανδρα"
+    for_children: "Για το Παιδί"
+    # for_woman: "Γυναικεία"
+    # for_man: "Αντρικά"
+    # for_children: "Παιδικά"
+    rings: "Δαχτυλίδια"
+    earrings: "Σκουλαρίκια"
+    bracelets: "Βραχιόλια"
+    necklaces: "Κολιέ και Κρεμαστά"
+    bangles: "Βραχιόλια"
+    cufflinks: "Μανικετόκουμπα"
+    kids_bracelets: "Βραχιολάκια"
   footer:
     designed_and_developed: "Σχεδιασμός και κατασκευή ιστοσελίδας από "
   date:

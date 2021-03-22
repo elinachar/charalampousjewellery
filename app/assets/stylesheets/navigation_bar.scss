@@ -1,5 +1,6 @@
 @import 'breakpoints';
 @import 'colors';
+@import 'vendor_prefixes';
 
 
 /* Navigation Bar */
@@ -75,6 +76,7 @@
       height: 100px;
       margin: auto;
       margin-top: 30px;
+      margin-bottom: 20px;
     }
     .gold-text {
       font-size: 25px;
@@ -92,8 +94,66 @@
       padding: 0;
       li {
         display: inline-block;
-        padding: 20px 15px;
-        font-size: 14px;
+
+        a {
+          padding: 20px 15px 10px 15px;
+          font-size: 14px;
+        }
+
+        hr {
+          border-color: white;
+          @include transition(border-color 1s);
+          margin: 3px auto 7px auto; //top and bottom should make 10px
+          width: calc(90% - 30px);
+          text-align: center;
+        }
+
+        .dropdown {
+          visibility: hidden;
+          overflow: hidden;
+          background: white;
+          padding: 0 30px;
+          position: absolute;
+          top: 220px;
+          left: 15px;
+          width: 100%;
+          border-bottom: 1px solid #f9f7f1;
+          opacity: 0;
+          @include transition(opacity 0.7s);
+          // height: 0;
+          // @include transition(height 0.5s linear);
+
+          p {
+            padding-left: 0;
+            padding-top: 20px;
+            border-bottom: 1px solid $lightGold;
+            // width: 80%;
+            margin-bottom: 5px;
+          }
+
+          ul {
+            padding-bottom: 30px;
+            li {
+              display: block;
+              padding: 5px 0;
+
+              a {
+                padding: 0;
+                font-size: 15px;
+              }
+            }
+          }
+        }
+      }
+
+      li:hover hr {
+        border-color: $lightGold;
+      }
+
+      li:hover .dropdown {
+        // height: 100%;
+        visibility: visible;
+        opacity: 1;
       }
     }
   }
@@ -126,7 +186,6 @@
 /* Inbetween LG and XL Screens */
 @media only screen and (min-width:1050px) {
   #nav-bar {
-    background: red;
     .nav-last-line {
       ul {
         li {
@@ -140,12 +199,18 @@
 /* XL Screens */
 @media only screen and (min-width: $xl_min_width) {
   #nav-bar {
-    background: green;
     .nav-last-line {
       ul {
         li {
-          padding: 20px;
           font-size: 16px;
+
+          a {
+            padding: 20px;
+          }
+
+          hr {
+            width: calc(90% - 40px);
+          }
         }
       }
     }

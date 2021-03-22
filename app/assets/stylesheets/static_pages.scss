@@ -33,3 +33,34 @@
     }
   }
 }
+
+//TEST
+.product-show {
+  background: white;
+
+  .product-image {
+    text-align: center;
+
+    img {
+      margin: auto;
+      max-width: 100%;
+      width: auto;
+      max-height: 400px;
+    }
+  }
+
+  .product-description {
+    padding: 50px;
+    text-align: center;
+
+    h1 {
+      padding-bottom: 20px;
+      border-bottom: 1px solid $lightGold;
+      margin-bottom: 30px;
+    }
+
+    p {
+      padding: 0px 50px;
+    }
+  }
+}

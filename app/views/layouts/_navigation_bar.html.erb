@@ -40,7 +40,7 @@
   <div class="nav-middle-line text-center">
     <!-- <p class="gold-text">Χαραλάμπους</p> -->
     <%= link_to root_path, :action => 'go' do %>
-      <%= image_tag('navbar_logo.png', class: "img-responsive", id: "navbar-logo", alt: "Charalampous - Exclusive Jewellery") %>
+      <%= image_tag('navbar_logo_capital.png', class: "img-responsive", id: "navbar-logo", alt: "Charalampous - Exclusive Jewellery") %>
     <% end %>
   </div>
   <!-- End of middle line (logo) of navigation bar -->
@@ -48,14 +48,48 @@
   <!-- Start of last line of navigation bar -->
   <div class="nav-last-line text-center">
     <ul>
-      <li><%= link_to(t('navigation_bar.jewellery'), root_path, class: "color-grey hover-black") %></li>
-      <li><%= link_to(t('navigation_bar.wedding'), root_path, class: "color-grey hover-black") %></li>
-      <li><%= link_to(t('navigation_bar.christening'), root_path, class: "color-grey hover-black") %></li>
-      <li><%= link_to(t('navigation_bar.watches'), root_path, class: "color-grey hover-black") %></li>
-      <li><%= link_to(t('navigation_bar.high_jewellery'), root_path, class: "color-grey hover-black") %></li>
-      <li><%= link_to(t('navigation_bar.accessories'), root_path, class: "color-grey hover-black") %></li>
-      <li><%= link_to(t('navigation_bar.gifts'), root_path, class: "color-grey hover-black") %></li>
-      <li><%= link_to(t('navigation_bar.the_company'), about_path, class: "color-grey hover-black") %></li>
+      <li>
+        <%= link_to(t('navigation_bar.jewellery'), root_path, class: "color-grey hover-black") %>
+        <hr>
+        <div class="dropdown row text-left">
+          <div class="col-4">
+            <p class="dropdown-header"><%= t('navigation_bar.for_woman') %></p>
+            <ul>
+              <li><%= link_to(t('navigation_bar.rings'), root_path, class: "color-grey hover-black") %></li>
+              <li><%= link_to(t('navigation_bar.necklaces'), necklaces_path, class: "color-grey hover-black") %></li>
+              <li><%= link_to(t('navigation_bar.earrings'), root_path, class: "color-grey hover-black") %></li>
+              <li><%= link_to(t('navigation_bar.bracelets'), root_path, class: "color-grey hover-black") %></li>
+            </ul>
+          </div>
+
+          <div class="col-4">
+            <p class="dropdown-header"><%= t('navigation_bar.for_man') %></p>
+            <ul>
+              <li><%= link_to(t('navigation_bar.rings'), root_path, class: "color-grey hover-black") %></li>
+              <li><%= link_to(t('navigation_bar.bangles'), root_path, class: "color-grey hover-black") %></li>
+              <li><%= link_to(t('navigation_bar.necklaces'), root_path, class: "color-grey hover-black") %></li>
+              <li><%= link_to(t('navigation_bar.cufflinks'), root_path, class: "color-grey hover-black") %></li>
+            </ul>
+          </div>
+
+          <div class="col-4">
+            <p class="dropdown-header"><%= t('navigation_bar.for_children') %></p>
+            <ul>
+              <li><%= link_to(t('navigation_bar.rings'), root_path, class: "color-grey hover-black") %></li>
+              <li><%= link_to(t('navigation_bar.necklaces'), root_path, class: "color-grey hover-black") %></li>
+              <li><%= link_to(t('navigation_bar.earrings'), root_path, class: "color-grey hover-black") %></li>
+              <li><%= link_to(t('navigation_bar.kids_bracelets'), root_path, class: "color-grey hover-black") %></li>
+            </ul>
+          </div>
+        </div>
+      </li>
+      <li><%= link_to(t('navigation_bar.wedding'), root_path, class: "color-grey hover-black") %><hr></li>
+      <li><%= link_to(t('navigation_bar.christening'), root_path, class: "color-grey hover-black") %><hr></li>
+      <li><%= link_to(t('navigation_bar.watches'), root_path, class: "color-grey hover-black") %><hr></li>
+      <li><%= link_to(t('navigation_bar.high_jewellery'), root_path, class: "color-grey hover-black") %><hr></li>
+      <li><%= link_to(t('navigation_bar.accessories'), root_path, class: "color-grey hover-black") %><hr></li>
+      <li><%= link_to(t('navigation_bar.gifts'), root_path, class: "color-grey hover-black") %><hr></li>
+      <li><%= link_to(t('navigation_bar.the_company'), about_path, class: "color-grey hover-black") %><hr></li>
     </ul>
 
   </div>
